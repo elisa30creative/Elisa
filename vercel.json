@@ -1,0 +1,9 @@
+{
+  "projectId": "htmlterra360",
+  "buildCommand": "next build",
+  "outputDirectory": ".next",
+  "framework": "nextjs",
+  "env": {
+    "NEXT_PUBLIC_APP_NAME": "@Elisa HtmlTerra360"
+  }
+}
