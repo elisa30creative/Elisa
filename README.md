@@ -1,1 +1,81 @@
-# 🌍 Elisa - Terra360 HtmlTerra\n\n> Projeto unificado **Elisa30Creative = Terra360**\n> \n> Plataforma de demonstração e desenvolvimento web\n\n## 📌 Informação Importante\n\n⚠️ **Elisa30Creative e Terra360 são o MESMO PROJETO**\n\nEste repositório consolidado contém toda a configuração, código e deployment do projeto Terra360 da elisa30creative.\n\n## 🚀 Início Rápido\n\n### Pré-requisitos\n- Node.js 16+\n- npm ou yarn\n\n### Instalação\n\n```bash\n# Clonar repositório\ngit clone https://github.com/elisa30creative/Elisa.git\ncd Elisa\n\n# Instalar dependências\nnpm install\n\n# Variáveis de ambiente\ncp .env.example .env.local\n```\n\n### Desenvolvimento\n\n```bash\nnpm run dev\n```\n\nAcesse `http://localhost:3000`\n\n### Build para Produção\n\n```bash\nnpm run build\nnpm run start\n```\n\n## 📁 Estrutura do Projeto\n\n```\nElisa/\n├── pages/              # Páginas Next.js\n├── public/            # Arquivos estáticos\n├── components/        # Componentes React\n├── styles/           # Estilos CSS\n├── package.json      # Dependências\n├── tsconfig.json     # Configuração TypeScript\n├── next.config.js    # Configuração Next.js\n├── vercel.json       # Configuração Vercel\n└── README.md         # Este arquivo\n```\n\n## 🌐 Deploy\n\n### Vercel (Ativo ✅)\n\n1. Repositório conectado ao Vercel\n2. Deploy automático em cada push para `main`\n3. **URL de Produção:** https://elisa-lac.vercel.app\n4. **URL Alternativa:** https://htmlterra360.vercel.app\n\n```bash\n# Deploy manual (se necessário)\nvercel\n```\n\n## 🛠️ Tecnologias\n\n- **Framework:** Next.js 14\n- **Linguagem:** TypeScript\n- **Runtime:** React 18\n- **Styling:** CSS Global\n- **Deployment:** Vercel\n- **Versionamento:** Git/GitHub\n\n## 📋 Scripts Disponíveis\n\n```bash\n# Desenvolvimento\nnpm run dev\n\n# Build\nnpm run build\n\n# Produção\nnpm run start\n\n# Linter\nnpm run lint\n```\n\n## 📚 Documentação\n\n- [Next.js Documentation](https://nextjs.org/docs)\n- [React Documentation](https://react.dev)\n- [TypeScript Documentation](https://www.typescriptlang.org/docs/)\n- [Vercel Documentation](https://vercel.com/docs)\n\n## 🔗 Links Importantes\n\n- **GitHub Repository:** [elisa30creative/Elisa](https://github.com/elisa30creative/Elisa)\n- **Live Demo:** [elisa-lac.vercel.app](https://elisa-lac.vercel.app)\n- **Author:** [@elisa30creative](https://github.com/elisa30creative)\n- **Projeto:** Terra360 (Elisa30Creative)\n\n## 📝 Licença\n\nCC0 1.0 Universal - Veja [LICENSE](./LICENSE) para detalhes completos\n\n## 👤 Autor\n\n**elisa30creative**\n- GitHub: [@elisa30creative](https://github.com/elisa30creative)\n- Vercel: [elisa-lac.vercel.app](https://elisa-lac.vercel.app)\n- Projeto: Terra360 HtmlTerra\n\n---\n\n**Última atualização:** 2026-09-02  \n**Status:** ✅ Ativo e funcionando\n
+# 🌍 Elisa — Terra360 HtmlTerra
+
+> **Elisa30Creative = Terra360** — projeto unificado de demonstração e desenvolvimento web.
+
+Este repositório é a base de publicação do projeto da **elisa30creative**. Os arquivos públicos do site devem ser colocados na pasta `public/`.
+
+## 🚀 Início rápido
+
+### Pré-requisitos
+
+- Node.js 16 ou superior
+- npm ou yarn
+
+### Instalação
+
+```bash
+git clone https://github.com/elisa30creative/Elisa.git
+cd Elisa
+npm install
+cp .env.example .env.local
+```
+
+### Desenvolvimento local
+
+```bash
+npm run dev
+```
+
+Acesse <http://localhost:3000>.
+
+### Build de produção
+
+```bash
+npm run build
+npm start
+```
+
+## 📂 Publicação de arquivos
+
+A pasta `public/` é a pasta pública principal do projeto Next.js:
+
+```text
+public/
+├── images/       # imagens
+├── documents/    # PDFs e outros documentos
+├── favicon.ico   # ícone do site
+└── ...           # demais arquivos públicos
+```
+
+Qualquer arquivo colocado em `public/` pode ser acessado diretamente pela URL, sem o prefixo `public/`:
+
+```text
+public/images/logo.png  →  /images/logo.png
+public/documents/guia.pdf  →  /documents/guia.pdf
+```
+
+Depois de adicionar ou alterar arquivos, publique as alterações com:
+
+```bash
+git add public/
+git commit -m "publica novos arquivos do projeto"
+git push origin main
+```
+
+Se o projeto estiver conectado à Vercel, o `push` para `main` iniciará automaticamente um novo deploy.
+
+## 🔐 Variáveis de ambiente
+
+Copie `.env.example` para `.env.local` e preencha os valores necessários. Arquivos `.env*` locais não são publicados pelo Git.
+
+## 🧰 Comandos disponíveis
+
+- `npm run dev` — inicia o servidor de desenvolvimento
+- `npm run build` — cria a build de produção
+- `npm start` — inicia a aplicação em produção
+- `npm run lint` — verifica o código
+
+## 🔗 Links
+
+- Repositório: <https://github.com/elisa30creative/Elisa>
+- Site: <https://elisa-lac.vercel.app>
