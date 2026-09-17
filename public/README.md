@@ -1,11 +1,16 @@
-# Arquivos públicos do Terra360
+# Organização dos arquivos públicos
 
-Coloque nesta pasta os arquivos que precisam ser publicados diretamente pelo site.
+Use estas pastas para manter os arquivos publicados organizados:
 
-No Next.js, `public/` é servida na raiz da aplicação:
+- `images/` — logos, banners e imagens do site
+- `documents/` — PDFs e documentos para download
+- `fonts/` — fontes locais, quando necessário
 
-- `public/logo.png` → `/logo.png`
-- `public/images/banner.jpg` → `/images/banner.jpg`
-- `public/documents/arquivo.pdf` → `/documents/arquivo.pdf`
+Os arquivos ficam disponíveis pela raiz do site. Por exemplo:
 
-Organize os novos arquivos em subpastas (`images`, `documents`, `fonts`, etc.) para manter o projeto fácil de manter.
+```text
+public/images/logo.png      → /images/logo.png
+public/documents/guia.pdf   → /documents/guia.pdf
+```
+
+Não coloque credenciais, chaves privadas ou dados pessoais em `public/`: tudo nesta pasta fica acessível publicamente.
