@@ -4,57 +4,50 @@
 
 Este repositório é a base de publicação do projeto da **elisa30creative**. Os arquivos públicos do site devem ser colocados na pasta `public/`.
 
-## 🚀 Início rápido
+## Requisitos
 
-### Pré-requisitos
+- Node.js 18.17 ou superior (necessário para Next.js 14)
+- npm 9+ ou yarn
 
-- Node.js 16 ou superior
-- npm ou yarn
-
-### Instalação
+## Início rápido
 
 ```bash
 git clone https://github.com/elisa30creative/Elisa.git
 cd Elisa
 npm install
 cp .env.example .env.local
-```
-
-### Desenvolvimento local
-
-```bash
 npm run dev
 ```
 
 Acesse <http://localhost:3000>.
 
-### Build de produção
+## Build de produção
 
 ```bash
 npm run build
 npm start
 ```
 
-## 📂 Publicação de arquivos
+## Publicação de arquivos
 
-A pasta `public/` é a pasta pública principal do projeto Next.js:
+A pasta `public/` é a pasta pública do Next.js. Organize os arquivos por tipo:
 
 ```text
 public/
 ├── images/       # imagens
-├── documents/    # PDFs e outros documentos
-├── favicon.ico   # ícone do site
-└── ...           # demais arquivos públicos
+├── documents/    # PDFs e documentos
+├── fonts/        # fontes locais
+└── favicon.ico   # ícone do site
 ```
 
-Qualquer arquivo colocado em `public/` pode ser acessado diretamente pela URL, sem o prefixo `public/`:
+Os arquivos são acessados sem o prefixo `public/`:
 
 ```text
 public/images/logo.png  →  /images/logo.png
 public/documents/guia.pdf  →  /documents/guia.pdf
 ```
 
-Depois de adicionar ou alterar arquivos, publique as alterações com:
+Para publicar alterações:
 
 ```bash
 git add public/
@@ -62,20 +55,20 @@ git commit -m "publica novos arquivos do projeto"
 git push origin main
 ```
 
-Se o projeto estiver conectado à Vercel, o `push` para `main` iniciará automaticamente um novo deploy.
+Se o repositório estiver conectado à Vercel, o push para `main` inicia automaticamente um novo deploy.
 
-## 🔐 Variáveis de ambiente
+## Variáveis de ambiente
 
 Copie `.env.example` para `.env.local` e preencha os valores necessários. Arquivos `.env*` locais não são publicados pelo Git.
 
-## 🧰 Comandos disponíveis
+## Comandos disponíveis
 
-- `npm run dev` — inicia o servidor de desenvolvimento
-- `npm run build` — cria a build de produção
-- `npm start` — inicia a aplicação em produção
-- `npm run lint` — verifica o código
+- `npm run dev` — servidor de desenvolvimento
+- `npm run build` — build de produção
+- `npm start` — servidor de produção
+- `npm run lint` — verificação de código
 
-## 🔗 Links
+## Links
 
 - Repositório: <https://github.com/elisa30creative/Elisa>
 - Site: <https://elisa-lac.vercel.app>
