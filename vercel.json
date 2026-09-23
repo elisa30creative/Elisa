@@ -1,4 +1,4 @@
-{
+remover este arquivo.vercel.json{
   "projectId": "htmlterra360",
   "buildCommand": "next build",
   "outputDirectory": ".next",
