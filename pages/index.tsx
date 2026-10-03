@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        title>Terra360 — Consciência, Educação, Informação e Ação Agroambiental</title>>
+        <title>Terra360 — Consciência, Educação, Informação e Ação Agroambiental</title>
         <meta name="description" content="Terra360 — plataforma digital de consciência, educação, informação e ação agroambiental." />
       </Head>
       <main className="site-shell">
