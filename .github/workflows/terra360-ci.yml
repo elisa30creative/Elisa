@@ -1,7 +1,7 @@
-```yaml
+
 name: Terra360 - Verificação protegida
 
-on:
+'on':
   push:
     branches:
       - automation/terra360-protected-ci
@@ -33,4 +33,3 @@ jobs:
         run: npm run build
         env:
           NEXT_TELEMETRY_DISABLED: 1
-```
